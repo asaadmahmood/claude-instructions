@@ -13,10 +13,14 @@ Generate customized 150-250 word cover letters for Upwork job applications.
 
 ## CRITICAL FILES - ALWAYS REFERENCE THESE
 ```
-/mnt/project/Cover_Letters_Data  → Portfolio projects with links by category
-/mnt/project/Highlights          → Career achievements and awards
-/mnt/project/Tech_Expertise      → Technical capabilities and services
+Cover_Letters_Data  (a.k.a. cover-letters-data.md)  → Portfolio projects with links by category
+Highlights          (a.k.a. highlights.md)          → Career achievements and awards
+Tech_Expertise      (a.k.a. tech-expertise.md)      → Technical capabilities and services
 ```
+These are the documents uploaded to this Project. Depending on how they were
+uploaded they may appear as `/mnt/project/Cover_Letters_Data` or as
+`cover-letters-data.md` — same document either way. Match on the document, not
+the exact filename, and never skip a step because the path did not resolve.
 
 ## MANDATORY CONTENT REQUIREMENTS
 
