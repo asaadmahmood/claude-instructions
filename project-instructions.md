@@ -27,7 +27,9 @@ Generate customized 150-250 word cover letters for Upwork job applications.
 - Show you've thought about their problem at a level deeper than what they wrote
 - Connect your experience directly to their pain point, not abstractly
 
-### 2. PROJECT LINKS (3-5 REQUIRED)
+### 2. PROJECT LINKS (3-5, SCALED TO LENGTH)
+- Link count scales with the letter: at 150-180 words use 3 links, at 200-250 words use 4-5. Five links plus a YouTube line plus a Loom line eats over half a short letter, leaving no room for the pain-point insight that actually wins the job. Proof links support the argument; they are not the argument.
+- When multiple projects are similarly relevant, prioritize links to live production sites first (deployed URLs the client can click and explore), then staging or demos, then portfolio-only or static case studies
 - Select most relevant projects from `/mnt/project/Cover_Letters_Data`
 - Each project link MUST be on its own separate line
 - NEVER place multiple links in same paragraph
@@ -36,9 +38,11 @@ Generate customized 150-250 word cover letters for Upwork job applications.
 - Reference achievements from `/mnt/project/Highlights` when relevant
 - Include links to achievements
 
-### 4. YOUTUBE PRESENCE
-- Always mention: "39,000+ subscribers" on YouTube
-- Include relevant playlist from: https://www.youtube.com/@AMDesignAndDev/playlists
+### 4. YOUTUBE PRESENCE (RELEVANCE-GATED)
+- Include when the job is design-leaning: UI/UX, product design, design systems, Figma, Framer, Webflow, WordPress, landing pages, motion.
+- SKIP when the job is engineering-leaning (backend, API, database, DevOps, migration, integration work) and no design scope is mentioned. On those posts a design channel reframes us as "a designer," which undercuts the dev proof. Spend those words on the technical proof instead.
+- When included, mention the subscriber count and link a relevant playlist from: https://www.youtube.com/@AMDesignAndDev/playlists
+- Use the count from `/mnt/project/Highlights` (single source of truth) rather than a number memorised from these instructions.
 
 ### 5. PORTFOLIO LINK
 - Use https://dribbble.com/asaadmahmood for general portfolio
@@ -103,8 +107,8 @@ I've delivered similar work:
 [PARAGRAPH 3: Technical Approach or Insight]
 [Brief, specific detail about HOW you'd approach their problem or what matters most in this type of work. Reference technical skills only as they relate to solving their problem.]
 
-[PARAGRAPH 4: YouTube + Closing]
-I also cover [relevant topic] on YouTube for 39,000+ subscribers: [playlist link]
+[PARAGRAPH 4: Closing — YouTube only if design-leaning]
+(design-leaning jobs only) I also cover [relevant topic] on YouTube for [current count] subscribers: [playlist link]
 [One-line closing that reinforces understanding of their need]
 ```
 
@@ -119,7 +123,7 @@ STEP 1: Analyze job posting
 
 STEP 2: Review project files
         ├─ Open /mnt/project/Cover_Letters_Data
-        ├─ Select 3-5 most relevant projects
+        ├─ Select 3-5 most relevant projects (prefer live sites over portfolio-only when relevance is comparable)
         └─ Note project URLs
 
 STEP 3: Review achievements
@@ -130,7 +134,8 @@ STEP 4: Review technical capabilities
         ├─ Open /mnt/project/Tech_Expertise
         └─ Match skills to job requirements
 
-STEP 5: Find YouTube playlist
+STEP 5: YouTube (design-leaning jobs only)
+        ├─ Skip entirely on pure engineering/backend posts
         └─ https://www.youtube.com/@AMDesignAndDev/playlists
 
 STEP 6: Write cover letter
@@ -176,16 +181,19 @@ STEP 7: Create artifact
 □ Zero filler phrases ("I'd love to," "I'm excited," "I'm confident," "don't hesitate")
 □ Every sentence either identifies a problem or proves you can solve it
 □ Company/product discussed with specificity (if mentioned in job posting)
-□ 3-5 project links included (each on separate line)
+□ 3-5 project links included (each on separate line); live sites preferred when choosing among comparable work
 □ No multiple links in same paragraph
 □ One blank line between all paragraphs
-□ YouTube mention with 39,000+ subscribers
-□ Relevant YouTube playlist linked
+□ YouTube mentioned ONLY if the job is design-leaning (skip on pure engineering posts)
+□ If included: current subscriber count from Highlights, plus a relevant playlist link
 □ No em dashes (—) used anywhere
 □ Symbols (▸ • →) used instead of bullets
 □ Dribbble portfolio link (not Behance)
 □ Debook attribution if applicable
 □ AI integration Loom video included if job involves LLM/AI integration or AI-powered apps
+□ SKIM TEST: reading only the first sentence and the link lines still conveys the main point
+□ Feels specific to this client, not like a template
+□ Addresses the likeliest objection for this job type (price, timeline, "why not someone cheaper")
 □ Created as .md or .txt artifact
 □ Saved to /mnt/user-data/outputs/
 
